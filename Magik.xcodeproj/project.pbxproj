@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53836FD41FA3EDDB004C7661 /* MagikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53836FD31FA3EDDB004C7661 /* MagikTests.swift */; };
+		53836FDC1FA3F83D004C7661 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53836FDB1FA3F83D004C7661 /* Basket.swift */; };
 		53CCE7C41FA11DBB008F9505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CCE7C31FA11DBB008F9505 /* AppDelegate.swift */; };
 		53CCE7C61FA11DBB008F9505 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CCE7C51FA11DBB008F9505 /* HomeViewController.swift */; };
 		53CCE7C91FA11DBB008F9505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CCE7C71FA11DBB008F9505 /* Main.storyboard */; };
@@ -19,7 +21,21 @@
 		53CCE7DE1FA136B2008F9505 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CCE7DD1FA136B2008F9505 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		53836FD61FA3EDDB004C7661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53CCE7B81FA11DBB008F9505 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53CCE7BF1FA11DBB008F9505;
+			remoteInfo = Magik;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		53836FD11FA3EDDB004C7661 /* MagikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53836FD31FA3EDDB004C7661 /* MagikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagikTests.swift; sourceTree = "<group>"; };
+		53836FD51FA3EDDB004C7661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53836FDB1FA3F83D004C7661 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		53CCE7C01FA11DBB008F9505 /* Magik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CCE7C31FA11DBB008F9505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53CCE7C51FA11DBB008F9505 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		53836FCE1FA3EDDB004C7661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53CCE7BD1FA11DBB008F9505 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53836FD21FA3EDDB004C7661 /* MagikTests */ = {
+			isa = PBXGroup;
+			children = (
+				53836FD31FA3EDDB004C7661 /* MagikTests.swift */,
+				53836FD51FA3EDDB004C7661 /* Info.plist */,
+			);
+			path = MagikTests;
+			sourceTree = "<group>";
+		};
 		53CCE7B71FA11DBB008F9505 = {
 			isa = PBXGroup;
 			children = (
 				53CCE7C21FA11DBB008F9505 /* Magik */,
+				53836FD21FA3EDDB004C7661 /* MagikTests */,
 				53CCE7C11FA11DBB008F9505 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				53CCE7C01FA11DBB008F9505 /* Magik.app */,
+				53836FD11FA3EDDB004C7661 /* MagikTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +132,7 @@
 			children = (
 				53CCE7D91FA11EE9008F9505 /* Product.swift */,
 				53CCE7DB1FA13160008F9505 /* Database.swift */,
+				53836FDB1FA3F83D004C7661 /* Basket.swift */,
 			);
 			name = Models;
 			path = "New Group";
@@ -123,6 +158,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		53836FD01FA3EDDB004C7661 /* MagikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53836FDA1FA3EDDB004C7661 /* Build configuration list for PBXNativeTarget "MagikTests" */;
+			buildPhases = (
+				53836FCD1FA3EDDB004C7661 /* Sources */,
+				53836FCE1FA3EDDB004C7661 /* Frameworks */,
+				53836FCF1FA3EDDB004C7661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53836FD71FA3EDDB004C7661 /* PBXTargetDependency */,
+			);
+			name = MagikTests;
+			productName = MagikTests;
+			productReference = 53836FD11FA3EDDB004C7661 /* MagikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		53CCE7BF1FA11DBB008F9505 /* Magik */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53CCE7D21FA11DBB008F9505 /* Build configuration list for PBXNativeTarget "Magik" */;
@@ -150,6 +203,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "André Henrique da Silva";
 				TargetAttributes = {
+					53836FD01FA3EDDB004C7661 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53CCE7BF1FA11DBB008F9505;
+					};
 					53CCE7BF1FA11DBB008F9505 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Manual;
@@ -170,11 +228,19 @@
 			projectRoot = "";
 			targets = (
 				53CCE7BF1FA11DBB008F9505 /* Magik */,
+				53836FD01FA3EDDB004C7661 /* MagikTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		53836FCF1FA3EDDB004C7661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53CCE7BE1FA11DBB008F9505 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,11 +254,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		53836FCD1FA3EDDB004C7661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53836FD41FA3EDDB004C7661 /* MagikTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53CCE7BC1FA11DBB008F9505 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				53CCE7DC1FA13160008F9505 /* Database.swift in Sources */,
+				53836FDC1FA3F83D004C7661 /* Basket.swift in Sources */,
 				53CCE7C61FA11DBB008F9505 /* HomeViewController.swift in Sources */,
 				53CCE7D81FA11E0F008F9505 /* Cell.swift in Sources */,
 				53CCE7DA1FA11EE9008F9505 /* Product.swift in Sources */,
@@ -203,6 +278,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53836FD71FA3EDDB004C7661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53CCE7BF1FA11DBB008F9505 /* Magik */;
+			targetProxy = 53836FD61FA3EDDB004C7661 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53CCE7C71FA11DBB008F9505 /* Main.storyboard */ = {
@@ -224,6 +307,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		53836FD81FA3EDDB004C7661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagikTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahenqs.MagikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magik.app/Magik";
+			};
+			name = Debug;
+		};
+		53836FD91FA3EDDB004C7661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagikTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahenqs.MagikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magik.app/Magik";
+			};
+			name = Release;
+		};
 		53CCE7D01FA11DBB008F9505 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -366,6 +481,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		53836FDA1FA3EDDB004C7661 /* Build configuration list for PBXNativeTarget "MagikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53836FD81FA3EDDB004C7661 /* Debug */,
+				53836FD91FA3EDDB004C7661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		53CCE7BB1FA11DBB008F9505 /* Build configuration list for PBXProject "Magik" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
