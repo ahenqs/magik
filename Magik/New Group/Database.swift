@@ -37,4 +37,8 @@ extension Array where Element: Marchadise {
         
         return self.sorted(by: { ascending ? $0.price < $1.price : $0.price > $1.price }) as! Products
     }
+    
+    func total() -> Double {
+        return self.flatMap({ $0.price }).reduce(0.0, +)
+    }
 }

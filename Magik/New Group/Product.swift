@@ -13,8 +13,7 @@ protocol Marchadise {
     var price: Double! { get set }
 }
 
-struct Product: Marchadise {
-    
+struct Product: Marchadise, Equatable {
     var name: String!
     var price: Double!
     
@@ -31,6 +30,10 @@ struct Product: Marchadise {
         let viewModel = self.viewModel
         
         return viewModel.name + " - " + viewModel.price
+    }
+    
+    static func ==(lhs: Product, rhs: Product) -> Bool {
+        return lhs.name == rhs.name && lhs.price == rhs.price
     }
 }
 

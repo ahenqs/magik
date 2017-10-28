@@ -15,9 +15,15 @@ class ProductManager: NSObject {
     var items: Products = []
 
     private var handler: ProductHandler = { prod in
-        print("Button action")
-        print("\t" + prod.description)
-        print("End of action\n")
+
+        Basket.shared.add(prod, completionHandler: { (success, error) in
+            if success {
+                print("Added \(prod.description)")
+            }
+        })
+        
+        print("Items are:")
+        print(Basket.shared.items)
     }
 
     convenience init(items: [Product]) {

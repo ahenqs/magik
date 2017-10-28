@@ -13,6 +13,8 @@ class HomeViewController: UIViewController, BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var dataManager: ProductManager!
+    
+    var items = Database.shared.items.orderByPrice()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +23,7 @@ class HomeViewController: UIViewController, BaseViewController {
     }
     
     func setupUI() {
-
-        let items = Database.shared.items.orderByPrice()
-
+        
         dataManager = ProductManager(items: items)
 
         tableView.delegate = dataManager
