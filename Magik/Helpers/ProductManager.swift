@@ -22,7 +22,7 @@ class ProductManager: NSObject {
             }
         })
         
-        print("Items are:")
+        print("\nTotal $\(Basket.shared.items.total())\n\nItems are:")
         print(Basket.shared.items)
     }
 

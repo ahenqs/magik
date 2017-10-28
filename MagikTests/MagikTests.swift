@@ -74,10 +74,6 @@ class MagikTests: XCTestCase {
         XCTAssertTrue(dataManager?.items.last?.price == 0.29, "Price should be $0.29")
     }
     
-    func DidSelectRow() {
-        
-    }
-    
     func testDidTappedActionButton() {
         
         controllerUnderTest.items = Database.shared.items.orderByName()
@@ -93,5 +89,31 @@ class MagikTests: XCTestCase {
         XCTAssertTrue(Basket.shared.items.count == 1, "Should be 1 item in Basket.")
         
     }
-    
+
+    func testBuyTwoItems() {
+        
+        controllerUnderTest.items = Database.shared.items.orderByName()
+        
+        _ = controllerUnderTest.view
+        
+        var indexPath = IndexPath(row: 0, section: 0)
+        
+        let firstCell = controllerUnderTest.dataManager.tableView(controllerUnderTest.tableView, cellForRowAt: indexPath) as! Cell
+        
+        firstCell.buyButtonTapped(firstCell.actionButton)
+        
+        indexPath = IndexPath(row: 1, section: 0)
+        
+        let secondCell = controllerUnderTest.dataManager.tableView(controllerUnderTest.tableView, cellForRowAt: indexPath) as! Cell
+        
+        secondCell.buyButtonTapped(secondCell.actionButton)
+        
+        let basketTotal = Basket.shared.items.total()
+        let itemsTotal = (controllerUnderTest.items.first?.price)! + controllerUnderTest.items[1].price
+        
+        XCTAssertTrue(Basket.shared.items.count == 2, "Should be 2 items in Basket.")
+        XCTAssertTrue(basketTotal == itemsTotal, "Should be equal \(basketTotal).")
+        
+    }
+
 }
